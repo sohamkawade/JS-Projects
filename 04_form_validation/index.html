@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="" id="myForm">
+            <input class="inp" type="text" id="firstname" name="firstname" placeholder="First Name" required>
+            <p id="error-firstname" class="error"></p>
+
+            <input class="inp" type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+            <p id="error-lastname" class="error"></p>
+
+            <input class="inp" type="email" id="email" name="email" placeholder="Email" required>
+            <p id="error-email" class="error"></p>
+
+            <input class="inp" type="number" id="contact" name="contact" placeholder="Contact Number" required>
+            <p id="error-contact" class="error"></p>
+
+            <input class="inp" type="password" id="pass1" name="password" placeholder="Password" required>
+            <p id="error-pass1" class="error"></p>
+
+            <input class="inp" type="password" id="pass2" name="confirm_password" placeholder="Confirm Password"
+                required>
+            <p id="error-pass2" class="error"></p>
+
+            <input id="btn" type="submit" onclick="validateForm(event)" value="Create Account">
+            <p>Already have an account? <a href="./login.html">Login</a></p>
+        </form>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

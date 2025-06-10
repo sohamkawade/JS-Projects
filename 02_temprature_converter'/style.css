@@ -1,0 +1,41 @@
+body {
+    background-color: #071f3a;
+}
+
+.container {
+    background-color: #082545;
+    width: 700px;
+    height: 300px;
+    margin-left: 25%;
+    box-shadow: 5px 5px 20px #111;
+    text-align: center;
+    margin-top: 10%;
+    border-radius: 8px;
+    color: white;
+}
+
+.input-div {
+    margin-top: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+h1 {
+    padding-top: 30px;
+}
+
+.inp {
+    outline: none;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(218, 215, 215);
+}
+
+#feh {
+    margin-inline-end: 23px;
+}
+
+.inp:focus {
+    border: 2px solid rgb(17, 17, 227);
+}

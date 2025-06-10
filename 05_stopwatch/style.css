@@ -1,0 +1,71 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;  
+    height: 100vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.stopwatch{
+    /* background-color: rgb(43, 42, 42); */
+    background-color:#000;
+    box-shadow: -1px 1px 30px rgb(30, 39, 59);
+    border-radius: 25px;
+    max-width: 500px;
+    padding: 80px 100px;
+}
+
+#display-timer{
+    background-color:  rgb(7, 7, 7);
+    height: 60px;
+    width: 70%;
+    position: relative;
+    bottom:20px;
+    left: 50px;
+    box-shadow: 1px 1px 20px rgb(28, 29, 49);
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 45px;
+}
+
+.buttons{
+    display: flex;
+    gap: 45px;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+button{
+    padding: 9px 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 1px 1px 10px rgb(28, 29, 68);
+    background-color: #000;
+    color: #fff;
+}
+
+#btn1:hover{
+    box-shadow: 1px 1px 12px rgb(3, 120, 3);
+    transform: scale(1.03);
+    transition:transform 1s  ease;
+}
+
+#btn2:hover{
+    box-shadow: 1px 1px 12px rgb(152, 3, 3);
+    transform: scale(1.03);
+    transition:transform 0.1s ease;
+}
+
+#btn3:hover{
+    box-shadow: 1px 1px 12px rgb(146, 1, 146);
+    transform: scale(1.03);
+    transition:transform 1s  ease;
+}
