@@ -10,7 +10,8 @@ body{
 .stopwatch{
     /* background-color: rgb(43, 42, 42); */
     background-color:#000;
-    box-shadow: -1px 1px 30px rgb(30, 39, 59);
+    box-shadow: -1px 1px 15px rgb(30, 39, 59);
+    /* animation: shadow-animation 3s linear infinite; */
     border-radius: 25px;
     max-width: 500px;
     padding: 80px 100px;
@@ -23,7 +24,8 @@ body{
     position: relative;
     bottom:20px;
     left: 50px;
-    box-shadow: 1px 1px 20px rgb(28, 29, 49);
+    /* box-shadow: 1px 1px 20px rgb(28, 29, 49); */
+    animation: shadow-animation 2s linear infinite;
     border-radius: 20px;
     color: white;
     display: flex;
@@ -68,4 +70,22 @@ button{
     box-shadow: 1px 1px 12px rgb(146, 1, 146);
     transform: scale(1.03);
     transition:transform 1s  ease;
+}
+
+@keyframes shadow-animation {
+    0%{
+        box-shadow: 3px 3px 10px rgb(30, 39, 59);;
+    }
+    25%{
+        box-shadow: -3px 3px 10px rgb(30, 39, 59);;
+    }
+    50%{
+        box-shadow: -3px 3px 10px rgb(30, 39, 59);;
+    }
+    75%{
+        box-shadow: 3px -3px 10px rgb(30, 39, 59);;
+    }
+    100%{
+        box-shadow: 3px 3px 10px rgb(30, 39, 59);;
+    }
 }
